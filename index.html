@@ -6,13 +6,18 @@
 <title>Redirecting to Portal</title>
 <meta http-equiv="refresh" content="3; url=/portal/">
 <script>
-setTimeout(function() {
-  window.location.replace("/portal/");
-}, 3000);
+(function() {
+  var redirectUrl = "/portal/";
+  setTimeout(function() {
+    window.location.replace(redirectUrl);
+  }, 3000);
+})();
 </script>
 </head>
 <body>
-<p>Redirecting to <a href="/portal/">portal</a>...</p>
-<p>If you are not redirected automatically, please <a href="/portal/">click here</a>.</p>
+<main role="alert">
+<p>Redirecting to <a href="/portal/">the portal page</a>...</p>
+<p>If you are not redirected automatically, please <a href="/portal/">go to the portal page</a>.</p>
+</main>
 </body>
 </html>
